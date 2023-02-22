@@ -1,9 +1,12 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="index.css" />
+    <title>BK Pets</title>
   </head>
 
   <body>
@@ -44,18 +47,120 @@
     <section class="section is-large">
       <div class="columns is-2 is-vcentered">
         <div class="column">
-          <div class="slider">
-            <!-- images -->
-            <div class="slide">
+          <!-- Start Carousel -->
+          <div id="carousel-demo" class="carousel">
+            <div class="item-1 product-image">
+              <!-- Slide Content -->
               <img />
             </div>
-            <!-- control btns -->
-            <button class="button btn-prev"></button>
-            <button class="button btn-next"></button>
+            <div class="item-2">
+              <!-- Slide Content -->
+              <img />
+            </div>
+            <div class="item-3">
+              <!-- Slide Content -->
+            </div>
           </div>
+          <!-- End Carousel -->
+          <button class="prev-btn button is-black">Previous</button>
+          <button class="next-btn button is-black">Next</button>
+        </div>
+        <div class="column content product-info">
+          <h2 class="title is-3">BK Dog Shampoo</h2>
+          <p>
+            Organic, made from only natural ingredients. Affordable, while being
+            good for your gods skin
+          </p>
+          <p>price here</p>
+          <ul>
+            <!-- <li>Fragrance-free</li>
+            <li>Fragrance-free</li>
+            <li>Fragrance-free</li> -->
+          </ul>
+          <a class="payment-link button is-black" href="#">Buy Now</a>
+          <!-- <button class="button is-black">Buy Now</button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="'section is-large">
+      <div class="has-background-light">
+        <div class="has-text-centered p-6">
+          <div class="title">Value Prop</div>
+          <div class="is-size-6">Content</div>
+        </div>
+        <div class="pb-6">
+          <div class="columns has-text-centered">
+            <div class="column">
+              <div>
+                <img src="https://bulma.io/images/placeholders/256x256.png" />
+              </div>
+              <div class="is-size-5">@handle</div>
+              <div class="is-size-4">Title</div>
+              <div class="is-size-7">text</div>
+            </div>
+            <div class="column">
+              <div>
+                <img src="https://bulma.io/images/placeholders/256x256.png" />
+              </div>
+              <div class="is-size-5">@handle</div>
+              <div class="is-size-4">Title</div>
+              <div class="is-size-7">text</div>
+            </div>
+            <div class="column">
+              <div>
+                <img src="https://bulma.io/images/placeholders/256x256.png" />
+              </div>
+              <div></div>
+              <div class="is-size-5">@handle</div>
+              <div class="is-size-4">Title</div>
+              <div class="is-size-7">text</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="columns has-text-centered">
+        <div class="column content is-one-third">
+          <h2 class="title">BK Pets</h2>
+          <p>&#169; 2010 - 2020</p>
+          <p>Privacy - Terms</p>
+        </div>
+        <div class="column is-one-third"></div>
+        <div class="column content is-one-third">
+          <h2 class="title">Follow us on</h2>
+          <p>Instagram</p>
+          <p>Facebook</p>
         </div>
         <div class="column"></div>
       </div>
-    </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel/dist/bulma-carousel.min.js"></script>
+    <script src="index.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBDL8NlNj6FCpmdE7qML_p53he9PHmMASw",
+        authDomain: "cs5356-milestone1-zl635.firebaseapp.com",
+        projectId: "cs5356-milestone1-zl635",
+        storageBucket: "cs5356-milestone1-zl635.appspot.com",
+        messagingSenderId: "726547206930",
+        appId: "1:726547206930:web:896b4ce9dbdd695e6d99cb",
+        measurementId: "G-X06YF8469M",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>

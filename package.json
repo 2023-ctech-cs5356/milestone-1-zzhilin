@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bulma-carousel": "^4.0.24",
+    "firebase": "^9.17.1"
+  }
+}
